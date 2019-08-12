@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta charset="uft-8" />
+
+    <link rel="shortcut icon" href="">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Calculadora de IMC</title>
+</head>
+    <body> 
+        <div class="box-container">
+            <h1>Calculadora de IMC</h1>
+            <div class="box-formulario">
+                <label>Peso (KG)</label>                
+                <input type="text" pattern="[0-9]*" id="txt_peso" placeholder="Digite seu peso" />
+                <label>Altura (CM)</label>
+                <input type="text" pattern="[0-9]*" id="txt_altura" placeholder="Digite sua altura" />
+
+                <div class="box-resultado">
+                    <label><b>IMC:</b><span id="lbl_imc"></span></label>
+                    <label><b>Resultado:</b><span id="lbl_resultado"></span></label>
+                </div>
+
+                <div class="box-botoes">
+                    <button id="btn_calcular" class="btn-positivo">Calcular</button>
+                    <button id="btn_limpar" class="btn-negativo">Limpar</button>
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>       
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </body>
+</html>
